@@ -1,4 +1,4 @@
-# Example for NestJS Database Unit Testing
+# Example for NestJS Database Unit / Integration Testing
 
 This repository is a quick, (not-working standalone) example, on how to 
 setup a database for each test scenario.
