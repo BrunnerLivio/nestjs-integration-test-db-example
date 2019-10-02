@@ -8,7 +8,7 @@ import { DatabaseService } from './database.service';
   imports: [
     TypeOrmModule.forRoot(getOrmConfig())
   ],
-  components: [
+  providers: [
     DatabaseService,
   ],
   exports: [
