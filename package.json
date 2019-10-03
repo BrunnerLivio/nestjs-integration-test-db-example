@@ -5,13 +5,21 @@
   "author": "Livio Brunner, Torsten Uhlmann",
   "license": "UNLICENSED",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
-    "test:watch": "jest --watch"
-  },
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },  
   "dependencies": {
-    "@lxdhub/db": "^1.10.1",
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "@nestjs/platform-express": "^6.7.2",

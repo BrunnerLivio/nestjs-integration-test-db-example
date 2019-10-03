@@ -1,5 +1,0 @@
-src/registerServiceWorker.js
-src/**/*.test.ts*
-src/**/*.d.ts
-src/**/__tests__/**
-src/**/__mocks__/**

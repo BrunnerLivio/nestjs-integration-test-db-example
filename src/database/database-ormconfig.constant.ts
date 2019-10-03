@@ -1,8 +1,7 @@
-import * as models from '@lxdhub/db';
 import { User } from '../user/user.entity';
 import { Teacher } from '../user/teacher.entity';
 import { TeacherUser } from '../user/teacher-user.entity';
- 
+
 export function getOrmConfig() {
     let OrmConfig;
     const settings = {

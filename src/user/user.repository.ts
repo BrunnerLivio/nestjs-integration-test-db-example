@@ -7,9 +7,3 @@ export class UserRepository extends Repository<User> {
     return await this.createQueryBuilder("user").getManyAndCount()
   }
 }
-
-// export const UserRepositoryProvider = {
-//     provide: 'UserRepository',
-//     useFactory: (connection: Connection) => connection.getCustomRepository(UserRepository),
-//     inject: [Connection]
-// };
