@@ -1,6 +1,6 @@
 # Example for NestJS Database Integration Testing
 
-This repository is a quick, (not-working standalone) example, on how to 
+This repository is a quick example, on how to 
 setup a database for each test scenario.
 
 ## Fixtures
@@ -12,3 +12,15 @@ This is made, to create relations between entities.
 To clarify: The TeacherUser has the foreign key `user` and `teacher`. In order to insert
 the TeacherUser, the `test.utils.ts`-Component needs to know the order of the entities. Because
 TeacherUser can not be inserted, without an User or Teacher entity. 
+
+## Install
+
+```
+npm install
+```
+
+## Run
+
+```
+npm test
+```

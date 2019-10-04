@@ -1,4 +1,6 @@
-import * as models from '@lxdhub/db';
+import { User } from '../user/user.entity';
+import { Teacher } from '../user/teacher.entity';
+import { TeacherUser } from '../user/teacher-user.entity';
 
 export function getOrmConfig() {
     let OrmConfig;
@@ -26,7 +28,8 @@ export function getOrmConfig() {
             type: 'sqlite',
             database: './db/test-db.sql',
             entities: [ User, Teacher, TeacherUser],
-            synchronize: true
+            synchronize: true,
+            dropSchema: true
         };
     }
     return OrmConfig;

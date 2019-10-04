@@ -1,7 +1,7 @@
-import { Component, Inject } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { Connection, Repository } from 'typeorm';
 
-@Component()
+@Injectable()
 export class DatabaseService {
     /**
      * Initializes the database service
